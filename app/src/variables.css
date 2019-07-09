@@ -1,0 +1,12 @@
+:root {
+  --spacing-01: 0.875rem;
+  --spacing-02: 1;
+  --spacing-03: 1.5rem;
+  --spacing-04: 2rem;
+
+  --primary-color: #000000;
+  --primary-color--hover: #444444;
+  --primary-color--interactive: #ddd;
+  --primary-background-color: #ffffff;
+  --primary-background-color--hover: #cccccc;
+}

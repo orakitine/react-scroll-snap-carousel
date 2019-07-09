@@ -1,0 +1,37 @@
+@import "../../carousel.variables.css";
+
+.carousel-arrow {
+  -webkit-appearance: none;
+  padding: var(--carousel-arrow-padding);
+  margin: 0;
+  pointer-events: auto;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--primary-background-color);
+}
+
+.carousel-arrow--left {
+  left: 0;
+}
+
+.carousel-arrow--right {
+  right: 0;
+}
+
+/* Removes Firefox's dotted outline when focused */
+.carousel-arrow::-moz-focus-inner {
+  border: 0;
+}
+
+.carousel-arrow svg {
+  fill: var(--primary-color);
+  width: 24px;
+  height: 24px;
+}
+
+.carousel-arrow:hover {
+  background-color: var(--primary-background-color--hover);
+}

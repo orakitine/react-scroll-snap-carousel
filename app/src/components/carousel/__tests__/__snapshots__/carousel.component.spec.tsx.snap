@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> @renders in default state 1`] = `
+<Carousel>
+  <CarouselBase
+    arrowIncrement="page"
+    displayCount={1}
+    index={0}
+    indicator="pages"
+    maxIndex={1}
+    noPadding={true}
+    slidesPerPage={1}
+    slidesTotal={2}
+  >
+    <Measure
+      onResize={[Function]}
+    >
+      <Component
+        contentRect={
+          Object {
+            "bounds": Object {},
+            "client": Object {},
+            "entry": Object {},
+            "margin": Object {},
+            "offset": Object {},
+            "scroll": Object {},
+          }
+        }
+        measure={[Function]}
+        measureRef={[Function]}
+      >
+        <div
+          className="carousel"
+          index={0}
+        >
+          <button
+            className="carouselSkip"
+            onClick={[Function]}
+          />
+          <div
+            className="carouselScrollbarHide"
+          >
+            <div
+              className="carouselContainer"
+            >
+              <ul
+                className="carouselFrame"
+                onScroll={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+              >
+                <CarouselSlides
+                  currentIndex={0}
+                  displayCount={1}
+                  noPadding={true}
+                  slideWidth={0}
+                >
+                  <li
+                    className="carouselSlide"
+                    key="0"
+                    style={
+                      Object {
+                        "width": "0px",
+                      }
+                    }
+                  >
+                    <div
+                      className="carouselSlideContainer"
+                    >
+                       
+                    </div>
+                  </li>
+                  <li
+                    className="carouselSlide"
+                    key="1"
+                    style={
+                      Object {
+                        "width": "0px",
+                      }
+                    }
+                  >
+                    <div
+                      className="carouselSlideContainer"
+                    >
+                       
+                    </div>
+                  </li>
+                </CarouselSlides>
+              </ul>
+              <CarouselArrow
+                direction="next"
+                onClick={[Function]}
+              >
+                <button
+                  aria-hidden={true}
+                  className="carouselArrow carouselArrowRight"
+                  onClick={[Function]}
+                  tabIndex={-1}
+                >
+                  <Icon
+                    name="chevron-right"
+                  >
+                    <svg
+                      viewBox="0 0 21 21.125"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.475 10.6l-7.3 7.3a2 2 0 0 0 0 2.7 2 2 0 0 0 2.7 0l8.6-8.7a2 2 0 0 0 0-2.7L7.875.6a1.936 1.936 0 0 0-1.3-.6 1.612 1.612 0 0 0-1.3.6 2 2 0 0 0 0 2.7z"
+                      />
+                    </svg>
+                  </Icon>
+                </button>
+              </CarouselArrow>
+            </div>
+          </div>
+          <CarouselPagination
+            currentIndex={0}
+            forceLast={false}
+            indicatorType="pages"
+            itemsPerPage={1}
+            onPageClick={[Function]}
+            total={2}
+          >
+            <div
+              className="carouselPagination"
+            >
+              <button
+                aria-hidden={true}
+                className="carouselPageCurrent"
+                key="0"
+                onClick={[Function]}
+                tabIndex={-1}
+              />
+              <button
+                aria-hidden={true}
+                className="carouselPage"
+                key="1"
+                onClick={[Function]}
+                tabIndex={-1}
+              />
+            </div>
+          </CarouselPagination>
+          <div
+            aria-hidden="true"
+            tabIndex={-1}
+          />
+        </div>
+      </Component>
+    </Measure>
+  </CarouselBase>
+</Carousel>
+`;

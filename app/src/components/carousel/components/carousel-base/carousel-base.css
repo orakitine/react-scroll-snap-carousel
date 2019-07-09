@@ -1,0 +1,85 @@
+@import "../../carousel.variables.css";
+
+.carousel {
+  position: relative;
+}
+
+.carousel-scrollbar-hide {
+  /* -webkit-overflow-scrolling: touch; gives momentum scrolling on IOS,
+   * but prevents from styling scrollbars >:( 
+   * container has negative margin-bottom and all slides get same padding-bottom
+   * this way scrollbar will be out of the way.
+   */
+  overflow: hidden;
+}
+
+.carousel__container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: calc(-1 * var(--carousel-scroll-hide-spacing));
+}
+
+.carousel__frame,
+.carousel__frame--padded {
+  list-style-type: none;
+  display: flex;
+  min-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  /* IE 10+ */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+.carousel__frame::-webkit-scrollbar,
+.carousel__frame--padded::-webkit-scrollbar {
+  /* Safari and Chrome*/
+  display: none;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.carousel__frame--padded {
+  margin-right: calc(-1 * var(--carousel-slides-spacing-sm));
+}
+
+@media (min-width: env(--mq-screen-medium-lower-bound)) {
+  .carousel__frame--padded {
+    margin-right: calc(-1 * var(--carousel-slides-spacing-md));
+  }
+}
+
+@media (min-width: env(--mq-screen-large-lower-bound)) {
+  .carousel__frame--padded {
+    margin-right: calc(-1 * var(--carousel-slides-spacing-lg));
+  }
+}
+
+@media (min-width: env(--mq-screen-extra-large-lower-bound)) {
+  .carousel__frame--padded {
+    margin-right: calc(-1 * var(--carousel-slides-spacing-xl));
+  }
+}
+
+.carousel__skip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+  padding: var(--carousel-arrow-padding);
+  margin: 0;
+  border: none;
+  background-color: var(--primary-background-color);
+  width: 100%;
+}
+.carousel__skip:focus {
+  opacity: 1;
+  z-index: 1;
+}

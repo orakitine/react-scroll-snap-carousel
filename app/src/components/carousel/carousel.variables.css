@@ -1,0 +1,12 @@
+@import '../../variables.css';
+
+:root {
+  --carousel-slides-spacing-sm: var(--spacing-01);
+  --carousel-slides-spacing-md: var(--spacing-02);
+  --carousel-slides-spacing-lg: var(--spacing-03);
+  --carousel-slides-spacing-xl: var(--spacing-04);
+  --carousel-pagination-dot-size: 6px;
+  --carousel-pagination-dot-padding: 4px;
+  --carousel-arrow-padding: 0.25rem;
+  --carousel-scroll-hide-spacing: 10px;
+}

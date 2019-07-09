@@ -1,0 +1,43 @@
+@import "../../carousel.variables.css";
+
+.carousel-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: var(--spacing-02);
+}
+.carousel-pagination--numbers {
+  display: inline-block;
+  margin-top: var(--spacing-02);
+}
+
+.carousel-page,
+.carousel-page--current {
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: var(--carousel-pagination-dot-padding);
+  margin: 0;
+  background: transparent;
+}
+
+.carousel-page:after,
+.carousel-page--current:after {
+  content: "";
+  display: block;
+  width: var(--carousel-pagination-dot-size);
+  height: var(--carousel-pagination-dot-size);
+  border-radius: 50%;
+}
+
+.carousel-page:after {
+  background-color: var(--primary-color--interactive);
+}
+
+.carousel-page--current:after {
+  background-color: var(--primary-color);
+}
+.carousel-page:hover:after,
+.carousel-page--current:hover:after {
+  background-color: var(--primary-color--hover);
+}

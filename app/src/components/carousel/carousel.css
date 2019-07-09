@@ -1,0 +1,4 @@
+@import './components/carousel-base/carousel-base.css';
+@import './components/carousel-slides/carousel-slides.css';
+@import './components/carousel-arrow/carousel-arrow.css';
+@import './components/carousel-pagination/carousel-pagination.css';

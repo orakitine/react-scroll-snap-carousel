@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> @renders in default state 1`] = `
+<Icon>
+  <svg
+    viewBox="0 0 1792 1792"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1528.811 315.924l-52.735-52.735L896 843.266 315.924 263.189l-52.735 52.735L843.266 896l-580.077
+    580.076 52.735 52.735L896 948.734l580.076 580.077 52.735-52.735L948.734 896z"
+    />
+  </svg>
+</Icon>
+`;

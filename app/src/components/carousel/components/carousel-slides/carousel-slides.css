@@ -1,0 +1,35 @@
+@import '../../carousel.variables.css';
+
+.carousel-slide,
+.carousel-slide--padded {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  padding-bottom: var(--carousel-scroll-hide-spacing);
+}
+
+.carousel-slide-container {
+  /* Would love to use overflow: hidden; on carousel-slide itself but this breaks scroll snapping in Safari */
+  overflow: hidden;
+}
+
+.carousel-slide--padded {
+  padding-right: var(--carousel-slides-spacing-sm);
+}
+
+@media (min-width: env(--mq-screen-medium-lower-bound)) {
+  .carousel-slide--padded {
+    padding-right: var(--carousel-slides-spacing-md);
+  }
+}
+
+@media (min-width: env(--mq-screen-large-lower-bound)) {
+  .carousel-slide--padded {
+    padding-right: var(--carousel-slides-spacing-lg);
+  }
+}
+
+@media (min-width: env(--mq-screen-extra-large-lower-bound)) {
+  .carousel-slide--padded {
+    padding-right: var(--carousel-slides-spacing-xl);
+  }
+}
