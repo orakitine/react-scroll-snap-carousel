@@ -33,7 +33,7 @@
     "@types/react-dom": "16.8.4",
     "@types/react-measure": "2.0.5",
     "@types/throttle-debounce": "1.1.1",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-measure": "2.3.0",
